@@ -7,7 +7,7 @@ resource "random_password" "password" { #A
 resource "aws_db_instance" "database" {
   allocated_storage      = 10
   engine                 = "mysql"
-  engine_version         = "5.7"    # "5.7"
+  engine_version         = "8.0"    # "5.7"
   instance_class         = "db.t3.micro"   # "db.t3.micro"
   identifier             = "${var.namespace}-db-instance"
   name                   = "pets"
